@@ -2,6 +2,10 @@
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as rails engine.
 
+## Swagger specifications
+
+https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
+
 ## Install
 
 Add to Gemfile
