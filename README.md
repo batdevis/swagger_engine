@@ -39,4 +39,6 @@ or place it in `app/assets/javascripts/swagger_engine/swagger.json`.
 
 Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 
+## License
+
 This project rocks and uses MIT-LICENSE.
