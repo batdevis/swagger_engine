@@ -12,7 +12,7 @@ Add to Gemfile
 `gem 'swagger-ui-rails'`
 
 Add to your config/routes.rb
-`mount SwaggerEngine::Engine, at: "/swagger_engine"`
+`mount SwaggerEngine::Engine, at: "/api-docs"`
 
 ### Protect your route
 
@@ -20,7 +20,7 @@ Add to your config/routes.rb
 
 ```
 authenticate :user do
-  mount SwaggerEngine::Engine, at: "/swagger_engine"
+  mount SwaggerEngine::Engine, at: "/api-docs"
 end
 ```
 
@@ -28,7 +28,7 @@ or
 
 ```
 authenticate :user, lambda { |u| u.admin } do
-  mount SwaggerEngine::Engine, at: "/swagger_engine"
+  mount SwaggerEngine::Engine, at: "/api-docs"
 end
 ```
 
@@ -50,3 +50,5 @@ This project rocks and uses MIT-LICENSE.
 ## Developed in collaboration with
 
 [![Rawfish Logo](http://rawfishindustries.com/wp-content/uploads/2015/03/logo_rawfish_WEB.jpg)](http://rawfishindustries.com)
+
+[Rawfish](http://rawfishindustries.com)
