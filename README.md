@@ -46,3 +46,7 @@ Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 ## License
 
 This project rocks and uses MIT-LICENSE.
+
+## Developed in collaboration with
+
+[![Rawfish Logo](http://rawfishindustries.com/wp-content/uploads/2015/03/logo_rawfish_WEB.jpg)](http://rawfishindustries.com)
