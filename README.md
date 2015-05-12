@@ -49,6 +49,6 @@ This project rocks and uses MIT-LICENSE.
 
 ## Developed in collaboration with
 
-[![Rawfish Logo](http://rawfishindustries.com/wp-content/uploads/2015/03/logo_rawfish_WEB.jpg)](http://rawfishindustries.com)
-
 [Rawfish](http://rawfishindustries.com)
+
+[![Rawfish Logo](http://rawfishindustries.com/wp-content/uploads/2015/03/logo_rawfish_WEB.jpg)](http://rawfishindustries.com)
