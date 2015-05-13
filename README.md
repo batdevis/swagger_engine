@@ -9,7 +9,7 @@ https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
 ## Install
 
 Add to Gemfile
-`gem 'swagger-ui-rails'`
+`gem 'swagger_engine', git: 'https://github.com/batdevis/swagger_engine.git'`
 
 Add to your config/routes.rb
 `mount SwaggerEngine::Engine, at: "/api-docs"`
