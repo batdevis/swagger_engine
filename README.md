@@ -29,7 +29,7 @@ end
 or
 
 ```
-authenticate :user, lambda { |u| u.admin } do
+authenticate :user, lambda { |u| u.admin? } do
   mount SwaggerEngine::Engine, at: "/api-docs"
 end
 ```
