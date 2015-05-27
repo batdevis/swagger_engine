@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = SwaggerEngine::VERSION
   s.authors     = ["batdevis"]
   s.email       = ["batdevis@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/batdevis/swagger_engine"
   s.summary     = "Mount swagger-ui as rails engine."
   s.description = ""
   s.license     = "MIT"
