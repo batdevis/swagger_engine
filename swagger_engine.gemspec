@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["batdevis@gmail.com"]
   s.homepage    = "https://github.com/batdevis/swagger_engine"
   s.summary     = "Mount swagger-ui as rails engine."
-  s.description = ""
+  s.description = "Api docs inside your rails project."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
