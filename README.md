@@ -10,7 +10,7 @@ https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
 
 Add to Gemfile
 
-```gem 'swagger_engine', git: 'https://github.com/batdevis/swagger_engine.git'```
+```gem 'swagger_engine'```
 
 Add to your config/routes.rb
 
