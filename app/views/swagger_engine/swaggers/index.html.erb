@@ -1,0 +1,7 @@
+<ul>
+  <% @json_files.each_key do |k| %>
+    <li>
+      <%= link_to k, swagger_path(k) %>
+    </li>
+  <% end %>
+</ul>

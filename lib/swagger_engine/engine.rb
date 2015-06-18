@@ -7,4 +7,21 @@ module SwaggerEngine
     end
 
   end
-end
+
+  class Configuration
+    #[{ default: "swagger.json" }]
+    attr_accessor :json_files
+  end
+  class << self
+    attr_writer :configuration
+  end
+
+  module_function
+  def configuration
+    @configuration ||= Configuration.new
+  end
+
+  def configure
+    yield(configuration)
+  end
+ end

@@ -1,3 +1,4 @@
 SwaggerEngine::Engine.routes.draw do
-  root 'swagger#index'
+  resources :swaggers, only: [:index, :show]
+  root 'swaggers#index'
 end
