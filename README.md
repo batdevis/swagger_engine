@@ -36,12 +36,23 @@ end
 
 ## Configure
 
-### Place json file
+### Json files
 
-Set the url of your json file in the environment variable `ENV['SWAGGER_JSON_URL']`,
-or place it in `app/assets/javascripts/swagger_engine/swagger.json`.
+Set the url of your json files in a initializer:
 
-### Edit your json file
+```
+#config/initializers/swagger_engine.rb
+
+SwaggerEngine.configure do |config|
+  config.json_files = {
+    v1: "swagger_v1.json",
+    v2: "swagger_v2.json"
+  }
+end
+```
+and place them in `app/assets/javascripts/swagger_engine/`.
+
+### Edit your json files
 
 Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 
