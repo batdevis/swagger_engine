@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Swagger UI</title>
   <%#= favicon_link_tag 'favicon-32x32.png', rel: 'icon', type: 'image/png', sizes: '32x32' %>
   <%#= favicon_link_tag 'favicon-16x16.png', rel: 'icon', type: 'image/png', sizes: '16x16' %>
@@ -19,6 +20,11 @@
       } else {
         url = '<%= asset_path("swagger_engine/#{@swagger_json_url}") %>';
       }
+
+      // Pre load translate...
+      if(window.SwaggerTranslator) {
+        window.SwaggerTranslator.translate();
+      }
       window.swaggerUi = new SwaggerUi({
         url: url,
         dom_id: "swagger-ui-container",
@@ -27,9 +33,15 @@
           if(typeof initOAuth == "function") {
             initOAuth({
               clientId: "your-client-id",
+              clientSecret: "your-client-secret",
               realm: "your-realms",
-              appName: "your-app-name"
+              appName: "your-app-name", 
+              scopeSeparator: ","
             });
+          }
+
+          if(window.SwaggerTranslator) {
+            window.SwaggerTranslator.translate();
           }
 
           $('pre code').each(function(i, e) {
@@ -42,7 +54,8 @@
           log("Unable to Load SwaggerUI");
         },
         docExpansion: "none",
-        sorter : "alpha"
+        apisSorter: "alpha",
+        showRequestHeaders: false
       });
 
       function addApiKeyAuthorization(){
@@ -80,16 +93,12 @@
     <form id='api_selector'>
       <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
       <div class='input'><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"/></div>
-      <div class='input'><a id="explore" href="#">Explore</a></div>
-      <div class='input'>
-        <% editurl = "http://editor.swagger.io/#/?import=#{ENV['QWIKWORD_BASE_URL']}/#{@swagger_json_url}" %>
-        <%= link_to("online editor", editurl, target: :blank) %>
-      </div>
+      <div class='input'><a id="explore" href="#" data-sw-translate>Explore</a></div>
     </form>
   </div>
 </div>
 
-<div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
+<div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
 </body>
 </html>
