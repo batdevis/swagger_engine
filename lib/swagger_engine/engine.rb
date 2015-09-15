@@ -11,6 +11,8 @@ module SwaggerEngine
   class Configuration
     #[{ default: "swagger.json" }]
     attr_accessor :json_files
+    attr_accessor :admin_username
+    attr_accessor :admin_password
   end
   class << self
     attr_writer :configuration

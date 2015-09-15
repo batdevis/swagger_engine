@@ -34,6 +34,17 @@ authenticate :user, lambda { |u| u.admin? } do
 end
 ```
 
+#### Basic http auth
+
+Set username and password in `config/initializers/swagger_engine.rb`:
+
+```
+SwaggerEngine.configure do |config|
+  config.admin_username = ENV['ADMIN_USERNAME']
+  config.admin_password = ENV['ADMIN_PASSWORD']
+end
+```
+
 ## Configure
 
 ### Json files
