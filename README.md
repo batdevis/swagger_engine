@@ -49,19 +49,19 @@ end
 
 ### Json files
 
-Set the url of your json files in a initializer:
+Set the path of your json files in a initializer:
 
 ```
 #config/initializers/swagger_engine.rb
 
 SwaggerEngine.configure do |config|
   config.json_files = {
-    v1: "swagger_v1.json",
-    v2: "swagger_v2.json"
+    v1: "lib/swagger/swagger_v1.json",
+    v2: "lib/swagger/swagger_v2.json"
   }
 end
 ```
-and place them in `app/assets/javascripts/swagger_engine/`.
+`lib/swagger/` is a good place to place them..
 
 ### Edit your json files
 
