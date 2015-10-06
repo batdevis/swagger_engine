@@ -18,7 +18,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = '<%= asset_path("swagger_engine/#{@swagger_json_url}") %>';
+        url = '<%= @swagger_json_url %>';
       }
 
       // Pre load translate...
