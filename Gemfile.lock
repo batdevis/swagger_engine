@@ -1,6 +1,7 @@
 PATH
   remote: .
   specs:
+    swagger_engine (0.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -11,3 +12,6 @@ PLATFORMS
 
 DEPENDENCIES
   swagger_engine!
+
+BUNDLED WITH
+   1.11.2
