@@ -33,10 +33,11 @@
           if(typeof initOAuth == "function") {
             initOAuth({
               clientId: "your-client-id",
-              clientSecret: "your-client-secret",
+              clientSecret: "your-client-secret-if-required",
               realm: "your-realms",
               appName: "your-app-name", 
-              scopeSeparator: ","
+              scopeSeparator: ",",
+              additionalQueryStringParams: {}
             });
           }
 
@@ -54,7 +55,9 @@
           log("Unable to Load SwaggerUI");
         },
         docExpansion: "none",
+        jsonEditor: false,
         apisSorter: "alpha",
+        defaultModelRendering: 'schema',
         showRequestHeaders: false
       });
 
