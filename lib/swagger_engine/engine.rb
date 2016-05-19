@@ -2,8 +2,14 @@ module SwaggerEngine
   class Engine < ::Rails::Engine
     isolate_namespace SwaggerEngine
 
+    #https://gist.github.com/parndt/11381872
+=begin
     initializer "swagger_engine.assets.precompile", group: :all do |app|
-      app.config.assets.precompile += %w(print.css reset.css)
+      app.config.assets.precompile += ['swagger_engine/print.css', 'swagger_engine/reset.css']
+    end
+=end
+    config.to_prepare do
+      Rails.application.config.assets.precompile += ['swagger_engine/print.css', 'swagger_engine/reset.css']
     end
 
   end
