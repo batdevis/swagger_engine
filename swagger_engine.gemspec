@@ -16,6 +16,9 @@ Gem::Specification.new do |s|
   s.description = 'Api docs inside your rails project.'
   s.license     = 'MIT'
 
+  s.add_development_dependency('pry')
+  s.add_development_dependency('rubocop')
+
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir['test/**/*']
 end

@@ -1,0 +1,13 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude: 
+    - Gemfile
+    - ./*.gemspec
+    - ./bin/**/*
+    - ./test/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Lint/Debugger:
+  Enabled: false
