@@ -1,4 +1,5 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
-  mount SwaggerEngine::Engine => "/swagger_engine"
+Rails.application.routes.draw do
+  mount SwaggerEngine::Engine => '/swagger_engine'
 end

@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 
 # Declare your gem's dependencies in swagger_engine.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -12,3 +14,8 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'pry'
+  gem 'rubocop'
+end
