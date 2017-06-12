@@ -1,7 +1,7 @@
 module SwaggerEngine
   class ApplicationController < ActionController::Base
 
-    before_filter :authenticate
+    before_action :authenticate
 
     protected
     def authenticate

@@ -8,6 +8,9 @@ If you want to maintain this project, contact me (batdevis[at]gmail.com) and I w
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as rails engine.
 
+Current master works with Rails 4.0+. If you're looking for Rails 3.0 support,
+try version 0.0.3.
+
 ## Swagger specifications
 
 https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
